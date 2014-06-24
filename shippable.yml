@@ -7,8 +7,3 @@ env:
 services:
   - rabbitmq
 
-notifications:
-     email:
-         recipients:
-             - exampleone@org.com
-             - exampletwo@org.com
