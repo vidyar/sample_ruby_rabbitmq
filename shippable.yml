@@ -2,12 +2,7 @@ language: ruby
 rvm:
   - 1.9.3
 env:
- global:
   - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
-  - secure: hz4JRTmV6xsbd2RmYI5aTdUoEFcGvK12MmwcKZVR5uQKVV3Gf0aGB0jkSu1qNCcjjBtM4q7AQuwCh5ji8xKOto0KWKy6RdQQH5Mp8+zvNHaXAZmLLdum5XxO/jRDLsiAA54NdXFmZS3qTqrIM0KFFs00Uzk7fzztpFoVVhSHOptf4kPFwyNQ9LKIMxY3DE30a+abeg/YBHanFDQAYqKvWJZmcVK1w6U0gnmtDig9VjKh9I4EGSENqgGEZg+gJ+KUw/Us5Y5BOCqY+whvbJI3YDDdhqlObANAjWcXLcb7evVMxiHC5pCDMWvHyuDz9tQE84V37DqlPQNebQJ+GKPsKg==
- matrix:
-  - secure: iegOOODvclPgH9fkvRucbszhsDS4CDrEaQRpY2nqG4wDTE8TRluY5bH0CfLsEgdF1rFAbQDFzltK8+KiIM8iXyXYPW8Qs5xp1MndkwHZg9Dk+piNWfIv0H0iarOC5St/ymsUVNB7pl4hbqfPICd+MafYlrZ0xmQ8f5emnJIrhyyZcEHU6GdSB0kg13LVHTvjIE008o39mP39ZnOE1XUAuRU8RJLCtYLQ4J8PLf3sXKIN7P2VTYln1pLxKNSm/tA2a8dqwHZdgyuzMc0NwS/FStgP6WlFyvYrbaTrO0KZCBVG0+T6Kd7SmsEJiHkiMiPY0gLVhfH2gCf2eM1Ib2xkww==
+
 services:
   - rabbitmq
-script:
-  - echo $foo and $test
