@@ -10,3 +10,4 @@ services:
 notifications:
   email:
     - vidya@shippable.com
+build_image: shippable/minv2
