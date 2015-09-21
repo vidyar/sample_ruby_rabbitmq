@@ -3,7 +3,9 @@ language: ruby
 rvm:
   - 1.9.3
 env:
+ global:
   - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
+  - secure: g5Lq6GKXCt3fiAAwwwdF9Tm6A/AspKL99BvgVQfptEwf/eOf2OMsuOXSfXgR8NSR/EkgfDKr3lFKLrQGbDqnnGAglACwNThUILlMFiXPMk8/xgqZdhY5licW4BWRZeByeOY38I9Tm5Mrx2thShHANaxLgbc9mm89CR00NZJdfA1jAKyj2P191KNDExOGrHhideDQOR+cN42nZZRuMDv+bH/GsjTMIbvxMei2bonrSHVi2iMAe7OBaSyrzlFQlj6Z215AXvzBixOw+9zRQSsWaJdeBu7Ggl0i+i5X1MGFO1IdWsQFp1Q81aF1x6Wy0BDDOY4T9KTVczK6bxhhynhthQ==
 
 services:
   - rabbitmq
