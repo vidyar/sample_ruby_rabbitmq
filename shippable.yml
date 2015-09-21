@@ -5,10 +5,13 @@ rvm:
 env:
  global:
   - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
-  - secure: g5Lq6GKXCt3fiAAwwwdF9Tm6A/AspKL99BvgVQfptEwf/eOf2OMsuOXSfXgR8NSR/EkgfDKr3lFKLrQGbDqnnGAglACwNThUILlMFiXPMk8/xgqZdhY5licW4BWRZeByeOY38I9Tm5Mrx2thShHANaxLgbc9mm89CR00NZJdfA1jAKyj2P191KNDExOGrHhideDQOR+cN42nZZRuMDv+bH/GsjTMIbvxMei2bonrSHVi2iMAe7OBaSyrzlFQlj6Z215AXvzBixOw+9zRQSsWaJdeBu7Ggl0i+i5X1MGFO1IdWsQFp1Q81aF1x6Wy0BDDOY4T9KTVczK6bxhhynhthQ==
-
+  - secure: pCHuSensEEnmoiswKIb6+HsdNUoJnU9C72WmlurwfVGtwjiVwe3Bos0vrNO/2sbSWArZE7kPAmn9LMopF4EayBaZixyFB8yGIGDtt/BbRHJQSHndQDxdP8IhiaUYR9wTLOEwVHNnQxeYKFbzNMzGHzpjQl7sKN1m1srnlWVQTRyuzDt4HA7UUhp5wqkECxSQWQSFuTAEFWBB74FOqYWrNjYAY2oKyu0LW76bWfiJ3Lchab80AvInFmWPygRigbmAZibgnbVG6QidlpeXBeFuuTfruQ2H8VHqxrk0d30SgUKfTn6o87brgMBURvQeH3ks7Ts58KysqmJ92As86wyL1A==
+  
+before_script:
+ - echo $key1
 services:
   - rabbitmq
+  
 notifications:
   email:
     - vidya@shippable.com
